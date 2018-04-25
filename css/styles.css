@@ -1,0 +1,257 @@
+/* .Layer_16 {
+  background-image: url("Layer 16.png");
+  position: absolute;
+  left: -6px;
+  top: 0px;
+  width: 1990px;
+  height: 661px;
+  z-index: 88;
+} */
+
+* {
+   padding: 0;
+   margin: 0;
+   font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    color:#fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+header {
+    background-image:url('../img/header-bg.png');
+    min-height: 400px;
+    /* width: 600px; */
+}
+
+
+
+.header_contacts {
+    
+    
+    color:#fff;
+    border-bottom:10px solid #93a0b0;
+    padding: 20px 0;
+}
+
+.logo {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.header_company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_info {
+    text-align: center;
+}
+
+.header_companyName {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.header_services, .header_location {
+    font-size: 12px;
+}
+
+.header_services {
+    background-color: #1151a9;
+    padding: 3px 0;
+}
+
+.header_services span {
+    border-right: 1px solid #fff;
+    padding-right: 4px;
+}
+
+/* header_connection */
+
+.header_connection {
+    text-align: center;
+
+}
+
+.header_connection div {
+    display: inline;
+    margin:0 5px;;
+}
+
+.verticalMiddle {
+    vertical-align: middle;
+    margin: 0 5px 4px 0;
+}
+
+.header_btn {
+    width: 150px;
+    margin-right: 7px;
+   padding: 15px 0;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.orangeBtn {
+    background-color:#ff9000;    
+    border-bottom:1px solid #fbaf4d;
+    box-shadow: 0px 6px #ef8905;
+}
+
+.orangeBtn:hover {
+    background-color: #ffb658;
+}
+
+.orangeBtn:active{
+    background-color: red;
+}
+
+.blueBtn:hover {
+    background-color: #1a6fe6;
+}
+
+.blueBtn:active {
+    background-color: blue;
+}
+
+.blueBtn {
+    background-color:#0c57bf;
+    border-bottom:1px solid #05739b;
+    box-shadow: 0px 6px #043881;
+}
+
+nav {
+    border-bottom: 2px solid #a9b7cc;
+    padding: 20px 0;
+}
+
+.header_item {
+    display: inline;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.header_item + .header_item:before{
+    content:"|";
+    color:#98a6b9;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.header_item:hover {
+    padding-bottom: 12px;
+}
+
+nav a:hover {
+    color:#fe8f00;
+}
+
+.header_title {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 25px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px dashed #ff9000;
+    border-bottom: 1px dashed #ff9000;
+    margin-top: 70px;
+    padding: 30px 0;
+}
+
+.header_title p {
+    font-size: 24px;
+    color:#fff;
+}
+.header_title span {
+    font-weight: bold;
+}
+
+h1 {
+    color:#ff9000;
+    font-size: 45px;
+}
+
+hr {
+    width: 770px;
+    margin:15px 0;
+}
+.advantages {
+    display: flex;
+    justify-content: center;
+}
+
+.advantage {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #053981;
+   margin: 10px 10px -40px 10px;
+   border-radius: 17px;
+   width: 25%;
+   padding: 15px;
+}
+
+
+
+.advantages span {
+    color:#fff;
+    
+}
+
+.advantage_img {
+    display: inline-block;
+    width: 70px;
+    height:40px;
+    padding: 18px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    border:6px solid #0e6aca;
+    position: relative;
+    margin-right: 15px;
+   
+}
+
+.advantage_img:before {
+    content: ''; 
+    position: absolute;
+    left: 26px; 
+    bottom: -26px;
+    border: 10px solid transparent;
+    border-top: 15px solid #0e6aca;
+}
+
+.form {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border:1px solid #000;
+    position: fixed;
+    top:106px;
+    right: 260px;
+}
+
+.displayNone {
+    display: none;
+}
+
