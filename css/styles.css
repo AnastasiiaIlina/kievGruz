@@ -1,18 +1,10 @@
-/* .Layer_16 {
-  background-image: url("Layer 16.png");
-  position: absolute;
-  left: -6px;
-  top: 0px;
-  width: 1990px;
-  height: 661px;
-  z-index: 88;
-} */
 
 * {
    padding: 0;
    margin: 0;
    font-family: sans-serif;
 }
+
 a {
     text-decoration: none;
     color:#fff;
@@ -23,7 +15,7 @@ li {
 }
 
 .container {
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -33,19 +25,15 @@ li {
     justify-content: space-around;
     align-items: flex-end;
 }
+
 header {
     background-image:url('../img/header-bg.png');
     min-height: 400px;
-    /* width: 600px; */
 }
 
-
-
 .header_contacts {
-    
-    
     color:#fff;
-    border-bottom:10px solid #93a0b0;
+    border-bottom:10px solid rgba(147,160,176,0.8);
     padding: 20px 0;
 }
 
@@ -77,6 +65,7 @@ header {
 .header_services {
     background-color: #1151a9;
     padding: 3px 0;
+    cursor:pointer;
 }
 
 .header_services span {
@@ -84,11 +73,8 @@ header {
     padding-right: 4px;
 }
 
-/* header_connection */
-
 .header_connection {
     text-align: center;
-
 }
 
 .header_connection div {
@@ -104,24 +90,35 @@ header {
 .header_btn {
     width: 150px;
     margin-right: 7px;
-   padding: 15px 0;
+    padding: 15px 0;
     border-radius: 5px;
     display: inline-block;
     text-align: center;
 }
 
 .orangeBtn {
-    background-color:#ff9000;    
+    background:#ff9000;   
+    background-image: linear-gradient(90deg, rgba(226,128,0,.5) 50%, transparent 0), 
+                    linear-gradient(rgba(226,128,0,.5) 50%, transparent 0);
+    background-size: 3px 3px; 
     border-bottom:1px solid #fbaf4d;
     box-shadow: 0px 6px #ef8905;
 }
 
+.blueBtn {
+    background:#0c57bf;
+    background-image: linear-gradient(90deg, rgba(6,65,144,.5) 50%, transparent 0), 
+                      linear-gradient(rgba(6,65,144,.5) 50%, transparent 0);
+    background-size: 3px 3px; 
+    border-bottom:1px solid #05739b;
+    box-shadow: 0px 6px #043881;
+}
 .orangeBtn:hover {
     background-color: #ffb658;
 }
 
 .orangeBtn:active{
-    background-color: red;
+    background-color: #ff5b00;
 }
 
 .blueBtn:hover {
@@ -130,12 +127,6 @@ header {
 
 .blueBtn:active {
     background-color: blue;
-}
-
-.blueBtn {
-    background-color:#0c57bf;
-    border-bottom:1px solid #05739b;
-    box-shadow: 0px 6px #043881;
 }
 
 nav {
@@ -156,12 +147,10 @@ nav {
     margin-left: 10px;
 }
 
-.header_item:hover {
-    padding-bottom: 12px;
-}
-
-nav a:hover {
-    color:#fe8f00;
+.header_item a:hover {
+    color:#f88c00;
+    border-bottom: 4px solid #fe8f00;
+    padding-bottom: 17px;
 }
 
 .header_title {
@@ -176,12 +165,48 @@ nav a:hover {
     border-bottom: 1px dashed #ff9000;
     margin-top: 70px;
     padding: 30px 0;
+    position: relative;
+}
+
+.cornersHor {
+    position: absolute; 
+    width: 25px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.cornersVer {
+    position: absolute; 
+    width: 4px;
+    height: 25px;
+    background-color: #fff;
+}
+
+.topLeftHor, .topLeftVer  {
+    top:-3px;
+    left: 0;
+}
+
+.topRightHor, .topRightVer {
+    top:-3px;
+    right: 0;
+}
+
+.bottomRightHor, .bottomRightVer  {
+    bottom: -3px;
+    right: 0;
+}
+
+.bottomLeftHor, .bottomLeftVer {
+    bottom: -3px;
+    left: 0;
 }
 
 .header_title p {
     font-size: 24px;
     color:#fff;
 }
+
 .header_title span {
     font-weight: bold;
 }
@@ -195,6 +220,7 @@ hr {
     width: 770px;
     margin:15px 0;
 }
+
 .advantages {
     display: flex;
     justify-content: center;
@@ -204,39 +230,43 @@ hr {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    background-color: #053981;
-   margin: 10px 10px -40px 10px;
-   border-radius: 17px;
-   width: 25%;
-   padding: 15px;
+    background-color: rgba(5,57,129,0.8);
+    margin: 10px 10px -40px 10px;
+    border-radius: 17px;
+    width: 25%;
+    padding: 15px;
 }
-
-
 
 .advantages span {
     color:#fff;
-    
 }
 
 .advantage_img {
-    display: inline-block;
-    width: 70px;
-    height:40px;
+    display: flex;
+    align-items: center;
+    height:36px;
     padding: 18px;
     text-align: center;
     background-color: #fff;
     border-radius: 50%;
-    border:6px solid #0e6aca;
     position: relative;
-    margin-right: 15px;
-   
+    z-index: 999;
+    box-shadow: 10px 5px 28px -5px rgba(0,0,0,0.75);
 }
 
-.advantage_img:before {
+.blueCircle {
+    position: relative;
+    background-color: #0e6aca;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.blueCircle:before {
     content: ''; 
     position: absolute;
-    left: 26px; 
-    bottom: -26px;
+    left: 38px; 
+    bottom: -23px;
     border: 10px solid transparent;
     border-top: 15px solid #0e6aca;
 }

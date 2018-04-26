@@ -1,4 +1,4 @@
-var form = document.querySelector('.form');
+let form = document.querySelector('.form');
 
 document.querySelector('.orangeBtn').onclick = () => {
     if (form.classList.contains('displayNone')) {
